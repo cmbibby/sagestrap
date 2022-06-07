@@ -1,0 +1,24 @@
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 0px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: $primary;
+    display: flex;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.navbar-toggler {
+  z-index: 999;
+}

@@ -1,0 +1,29 @@
+// Footer
+
+.wrapper-footer {
+  padding: 4rem 0;
+  .footer-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 3rem;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+    }
+  }
+  .site-info {
+    margin-top: 3rem;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      a {
+        color: $light;
+        text-decoration: none;
+      }
+    }
+  }
+}
